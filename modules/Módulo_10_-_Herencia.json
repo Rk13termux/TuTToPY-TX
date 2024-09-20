@@ -1,0 +1,51 @@
+{
+    "Módulo 10 - Herencia": {
+        "Descripción": {
+            "description": "En este módulo aprenderás sobre la herencia en programación orientada a objetos (POO). La herencia es una forma de crear una nueva clase a partir de una clase existente, permitiendo reutilizar y extender el código. Esto ayuda a crear una estructura más organizada y lógica en tus programas.",
+            "content": [
+                {
+                    "title": "Introducción a la Herencia",
+                    "text": "La herencia permite a una clase (subclase) heredar atributos y métodos de otra clase (superclase). Esto significa que puedes crear una nueva clase que tenga todas las características de una clase existente, además de nuevas características.",
+                    "example_code": "class Animal:\n    def hablar(self):\n        print('El animal hace un sonido')\n\nclass Perro(Animal):\n    def hablar(self):\n        print('¡Guau!')\n\nmi_perro = Perro()\nmi_perro.hablar()",
+                    "instructions": "Crea un archivo llamado `introduccion_a_la_herencia.py`, copia el código y ejecútalo para ver cómo funciona la herencia en Python.",
+                    "example_code_command": "python3 introduccion_a_la_herencia.py"
+                },
+                {
+                    "title": "Herencia Múltiple",
+                    "text": "Python permite la herencia múltiple, donde una clase puede heredar de más de una clase base. Sin embargo, esto debe hacerse con cuidado para evitar la complejidad y confusión en el diseño del programa.",
+                    "example_code": "class Mamifero:\n    def dar_mamando(self):\n        print('Alimenta a su cría')\n\nclass Canino(Mamifero):\n    def ladrar(self):\n        print('¡Guau!')\n\nclass Perro(Canino):\n    def __init__(self, nombre):\n        self.nombre = nombre\n\nmi_perro = Perro('Rex')\nmi_perro.dar_mamando()\nmi_perro.ladrar()",
+                    "instructions": "Guarda este código en un archivo llamado `herencia_multiple.py` y ejecútalo para entender la herencia múltiple.",
+                    "example_code_command": "python3 herencia_multiple.py"
+                },
+                {
+                    "title": "Sobrecarga de Métodos",
+                    "text": "La sobrecarga de métodos ocurre cuando una subclase redefine un método de su superclase. Esto permite que el método en la subclase tenga un comportamiento diferente del método original en la superclase.",
+                    "example_code": "class Vehiculo:\n    def mover(self):\n        print('El vehículo se mueve')\n\nclass Coche(Vehiculo):\n    def mover(self):\n        print('El coche avanza rápido')\n\nmi_coche = Coche()\nmi_coche.mover()",
+                    "instructions": "Crea un archivo llamado `sobrecarga_metodos.py`, copia el código y ejecútalo para observar la sobrecarga de métodos.",
+                    "example_code_command": "python3 sobrecarga_metodos.py"
+                },
+                {
+                    "title": "Uso de `super()`",
+                    "text": "La función `super()` se utiliza para llamar a métodos de la clase base desde la clase derivada. Esto es útil para extender el comportamiento de los métodos de la superclase sin redefinir todo el método.",
+                    "example_code": "class Persona:\n    def __init__(self, nombre):\n        self.nombre = nombre\n\nclass Estudiante(Persona):\n    def __init__(self, nombre, curso):\n        super().__init__(nombre)\n        self.curso = curso\n\nestudiante = Estudiante('Alice', 'Python')\nprint(f'Nombre: {estudiante.nombre}, Curso: {estudiante.curso}')",
+                    "instructions": "Guarda este código en un archivo llamado `uso_super.py` y ejecútalo para ver cómo usar `super()` en Python.",
+                    "example_code_command": "python3 uso_super.py"
+                },
+                {
+                    "title": "Polimorfismo y Herencia",
+                    "text": "El polimorfismo permite que diferentes clases derivadas de una misma superclase implementen el mismo método de forma diferente. Esto mejora la flexibilidad y escalabilidad del código.",
+                    "example_code": "class Gato(Animal):\n    def hablar(self):\n        print('¡Miau!')\n\nanimales = [Perro(), Gato()]\nfor animal in animales:\n    animal.hablar()",
+                    "instructions": "Crea un archivo llamado `polimorfismo_y_herencia.py`, copia el código y ejecútalo para entender el polimorfismo en la herencia.",
+                    "example_code_command": "python3 polimorfismo_y_herencia.py"
+                },
+                {
+                    "title": "Ejemplo Completo de Herencia",
+                    "text": "Vamos a implementar un ejemplo que involucre varias clases, mostrando cómo la herencia permite estructurar el código de manera efectiva y lógica.",
+                    "example_code": "class Electrodomestico:\n    def __init__(self, marca):\n        self.marca = marca\n\nclass Lavadora(Electrodomestico):\n    def __init__(self, marca, carga):\n        super().__init__(marca)\n        self.carga = carga\n\n    def lavar(self):\n        print(f'Lava con {self.carga} kg de carga')\n\nmi_lavadora = Lavadora('LG', 7)\nmi_lavadora.lavar()",
+                    "instructions": "Guarda este código en un archivo llamado `ejemplo_herencia.py` y ejecútalo para ver un ejemplo completo de herencia en acción.",
+                    "example_code_command": "python3 ejemplo_herencia.py"
+                }
+            ]
+        }
+    }
+}

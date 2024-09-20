@@ -1,0 +1,51 @@
+{
+    "Módulo 3 - Operadores y expresiones": {
+        "Descripción": {
+            "description": "En este módulo aprenderás a trabajar con operadores en Python. Los operadores permiten realizar cálculos y tomar decisiones en el código. Este módulo cubre operadores aritméticos, de comparación, lógicos, y su uso en expresiones para resolver problemas.",
+            "content": [
+                {
+                    "title": "Operadores aritméticos",
+                    "text": "Los operadores aritméticos se utilizan para realizar cálculos matemáticos. Python incluye operadores para sumar, restar, multiplicar, dividir y mucho más.",
+                    "example_code": "a = 10\nb = 3\n\nprint('Suma:', a + b)\nprint('Resta:', a - b)\nprint('Multiplicación:', a * b)\nprint('División:', a / b)\nprint('División entera:', a // b)\nprint('Módulo (resto):', a % b)\nprint('Exponenciación:', a ** b)",
+                    "instructions": "Crea un archivo llamado `operadores_aritmeticos.py` con este código. Ejecútalo para ver cómo funcionan los operadores aritméticos en Python.",
+                    "example_code_command": "python3 operadores_aritmeticos.py"
+                },
+                {
+                    "title": "Operadores de comparación",
+                    "text": "Los operadores de comparación se utilizan para comparar valores. El resultado de una comparación es un valor booleano: `True` si la comparación es verdadera, y `False` si es falsa.",
+                    "example_code": "a = 10\nb = 3\n\nprint('Igual a:', a == b)\nprint('Distinto de:', a != b)\nprint('Mayor que:', a > b)\nprint('Menor que:', a < b)\nprint('Mayor o igual que:', a >= b)\nprint('Menor o igual que:', a <= b)",
+                    "instructions": "Crea un archivo llamado `operadores_comparacion.py` y copia este código. Al ejecutarlo, observarás los resultados de las comparaciones.",
+                    "example_code_command": "python3 operadores_comparacion.py"
+                },
+                {
+                    "title": "Operadores lógicos",
+                    "text": "Los operadores lógicos permiten combinar expresiones condicionales. Python incluye tres operadores lógicos principales: `and`, `or` y `not`.",
+                    "example_code": "a = True\nb = False\n\nprint('AND:', a and b)\nprint('OR:', a or b)\nprint('NOT a:', not a)",
+                    "instructions": "Crea un archivo llamado `operadores_logicos.py` y pega el código. Ejecútalo y analiza cómo los operadores lógicos combinan valores booleanos.",
+                    "example_code_command": "python3 operadores_logicos.py"
+                },
+                {
+                    "title": "Operadores de asignación",
+                    "text": "Los operadores de asignación se utilizan para asignar valores a las variables. El operador `=` es el más básico, pero Python permite hacer asignaciones combinadas con operadores aritméticos.",
+                    "example_code": "a = 5\n\n# Asignación con suma\na += 3  # a = a + 3\nprint('a += 3:', a)\n\n# Asignación con resta\na -= 2  # a = a - 2\nprint('a -= 2:', a)\n\n# Asignación con multiplicación\na *= 4  # a = a * 4\nprint('a *= 4:', a)",
+                    "instructions": "Guarda este código en un archivo llamado `operadores_asignacion.py` y ejecútalo para ver cómo funcionan los operadores de asignación.",
+                    "example_code_command": "python3 operadores_asignacion.py"
+                },
+                {
+                    "title": "Precedencia de operadores",
+                    "text": "La precedencia de operadores determina el orden en el que se evalúan las expresiones con múltiples operadores. Python sigue las reglas matemáticas estándar: paréntesis, exponenciación, multiplicación y división, y finalmente suma y resta.",
+                    "example_code": "resultado = 10 + 2 * 3 ** 2\nprint('Resultado:', resultado)  # Resultado: 28\n\nresultado = (10 + 2) * 3 ** 2\nprint('Resultado con paréntesis:', resultado)  # Resultado: 108",
+                    "instructions": "Crea un archivo llamado `precedencia_operadores.py` y observa cómo cambia el resultado dependiendo del uso de paréntesis.",
+                    "example_code_command": "python3 precedencia_operadores.py"
+                },
+                {
+                    "title": "Operadores bit a bit",
+                    "text": "Python también ofrece operadores que trabajan a nivel de bits. Estos operadores son útiles en programación de bajo nivel y cuando necesitas manipular datos a nivel binario.",
+                    "example_code": "a = 60  # 0011 1100\nb = 13  # 0000 1101\n\nprint('AND bit a bit:', a & b)  # 0000 1100\nprint('OR bit a bit:', a | b)  # 0011 1101\nprint('XOR bit a bit:', a ^ b)  # 0011 0001\nprint('NOT bit a bit:', ~a)  # 1100 0011\n\n# Desplazamiento de bits\nprint('Desplazamiento a la izquierda:', a << 2)  # 1111 0000\nprint('Desplazamiento a la derecha:', a >> 2)  # 0000 1111",
+                    "instructions": "Guarda este código en un archivo llamado `operadores_bit_a_bit.py` y ejecuta el archivo para ver cómo funcionan los operadores bit a bit en Python.",
+                    "example_code_command": "python3 operadores_bit_a_bit.py"
+                }
+            ]
+        }
+    }
+}

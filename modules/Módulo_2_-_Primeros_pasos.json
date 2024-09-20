@@ -1,0 +1,51 @@
+{
+    "Módulo 2 - Primeros pasos": {
+        "Descripción": {
+            "description": "Este módulo está diseñado para introducir a los estudiantes a los conceptos básicos de Python, desde la instalación del lenguaje hasta la ejecución de sus primeros scripts. Al finalizar, el estudiante comprenderá cómo interactuar con Python a través de la terminal, cómo escribir y ejecutar scripts básicos, y cómo trabajar con variables y tipos de datos.",
+            "content": [
+                {
+                    "title": "Instalación de Python",
+                    "text": "El primer paso para comenzar a programar en Python es asegurarse de que esté instalado en tu sistema. Python está disponible para su instalación en los principales sistemas operativos como Windows, macOS y Linux. Puedes descargar la última versión desde el sitio oficial.",
+                    "example_code": null,
+                    "instructions": "Visita https://www.python.org/downloads/ para descargar e instalar Python. Asegúrate de agregar Python a tu variable de entorno PATH durante la instalación en Windows.",
+                    "example_code_command": null
+                },
+                {
+                    "title": "Verificar la instalación",
+                    "text": "Después de la instalación, debes verificar que Python esté correctamente configurado y listo para usarse. Esto lo puedes hacer ejecutando un comando en la terminal para verificar la versión instalada.",
+                    "example_code": null,
+                    "instructions": "Abre la terminal y ejecuta el siguiente comando para verificar la versión de Python instalada:",
+                    "example_code_command": "python --version\n# O bien, en algunos sistemas puede ser necesario usar:\npython3 --version"
+                },
+                {
+                    "title": "Escribir tu primer script",
+                    "text": "Un script en Python es simplemente un archivo de texto que contiene código Python. El siguiente paso es escribir tu primer script en Python. Crearemos un archivo simple que imprimirá un mensaje en la pantalla.",
+                    "example_code": "print('¡Hola, Python!')",
+                    "instructions": "Escribe este código en un archivo con extensión `.py`. Guárdalo como `primer_script.py` y luego ejecútalo desde la terminal.",
+                    "example_code_command": "python3 primer_script.py"
+                },
+                {
+                    "title": "Entendiendo los tipos de datos",
+                    "text": "Python utiliza varios tipos de datos básicos que son fundamentales para escribir programas. Estos incluyen números enteros (int), números decimales (float), cadenas de texto (str) y valores booleanos (bool).",
+                    "example_code": "x = 5  # Entero\npi = 3.14  # Decimal\nsaludo = 'Hola, mundo'  # Cadena de texto\nes_verdad = True  # Booleano",
+                    "instructions": "Copia y pega este código en un archivo llamado `tipos_datos.py`, ejecútalo y observa cómo Python maneja diferentes tipos de datos.",
+                    "example_code_command": "python3 tipos_datos.py"
+                },
+                {
+                    "title": "Trabajando con variables",
+                    "text": "Las variables te permiten almacenar datos en la memoria de tu programa para utilizarlos posteriormente. En Python, declarar variables es simple: solo necesitas asignar un valor a un nombre de variable utilizando el símbolo `=`.",
+                    "example_code": "nombre = 'Juan'\nedad = 25\nes_estudiante = True\n\nprint('Nombre:', nombre)\nprint('Edad:', edad)\nprint('¿Es estudiante?:', es_estudiante)",
+                    "instructions": "Escribe este código en un archivo llamado `variables.py`, ejecútalo y observa cómo Python imprime los valores almacenados en las variables.",
+                    "example_code_command": "python3 variables.py"
+                },
+                {
+                    "title": "Interacción con el usuario",
+                    "text": "Python permite que el programa interactúe con el usuario mediante la entrada de datos. Esto se logra utilizando la función `input()`, que detiene la ejecución del programa y espera que el usuario ingrese datos.",
+                    "example_code": "nombre = input('¿Cómo te llamas?: ')\nprint('Hola, ' + nombre + '!')",
+                    "instructions": "Guarda este código en un archivo llamado `entrada_usuario.py`. Al ejecutarlo, el programa solicitará tu nombre y luego imprimirá un mensaje personalizado.",
+                    "example_code_command": "python3 entrada_usuario.py"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "Módulo 13 - Ficheros": {
+        "Descripción": {
+            "description": "En este módulo aprenderás a trabajar con ficheros en Python, incluyendo la lectura, escritura y manipulación de datos en archivos de texto y CSV. El manejo de ficheros es esencial para almacenar y recuperar información en tus aplicaciones.",
+            "content": [
+                {
+                    "title": "Lectura de Ficheros de Texto",
+                    "text": "Para leer ficheros de texto en Python, se utiliza la función `open()`. Puedes leer el contenido línea por línea o todo de una vez.",
+                    "example_code": "with open('archivo.txt', 'r') as archivo:\n    contenido = archivo.read()\n    print(contenido)",
+                    "instructions": "Crea un archivo llamado `archivo.txt` y escribe algo de texto en él. Luego, ejecuta el código anterior para leer su contenido.",
+                    "example_code_command": "python3 leer_fichero.py"
+                },
+                {
+                    "title": "Escritura en Ficheros de Texto",
+                    "text": "Puedes escribir en un fichero utilizando el modo de apertura 'w'. Ten cuidado, ya que esto sobrescribirá el contenido existente.",
+                    "example_code": "with open('nuevo_archivo.txt', 'w') as archivo:\n    archivo.write('Hola, mundo!')",
+                    "instructions": "Ejecuta el código anterior para crear un nuevo archivo llamado `nuevo_archivo.txt` con el texto 'Hola, mundo!'.",
+                    "example_code_command": "python3 escribir_fichero.py"
+                },
+                {
+                    "title": "Añadir Contenido a un Fichero",
+                    "text": "Para añadir contenido a un fichero sin sobrescribirlo, utiliza el modo 'a'. Esto te permite agregar texto al final del archivo.",
+                    "example_code": "with open('nuevo_archivo.txt', 'a') as archivo:\n    archivo.write('\\nAñadiendo más texto.')",
+                    "instructions": "Ejecuta el código anterior para añadir texto al final de `nuevo_archivo.txt` y luego revisa el archivo.",
+                    "example_code_command": "python3 añadir_contenido.py"
+                },
+                {
+                    "title": "Lectura de Ficheros CSV",
+                    "text": "Los ficheros CSV son comunes para almacenar datos tabulares. Puedes utilizar el módulo `csv` para leer y escribir estos ficheros fácilmente.",
+                    "example_code": "import csv\nwith open('datos.csv', 'r') as archivo:\n    lector = csv.reader(archivo)\n    for fila in lector:\n        print(fila)",
+                    "instructions": "Crea un archivo `datos.csv` con algunas filas de datos y ejecuta el código para leerlo.",
+                    "example_code_command": "python3 leer_csv.py"
+                },
+                {
+                    "title": "Escritura en Ficheros CSV",
+                    "text": "Para escribir en un fichero CSV, también puedes usar el módulo `csv`. Asegúrate de utilizar el modo 'w' para crear un nuevo archivo.",
+                    "example_code": "import csv\nwith open('nuevo_datos.csv', 'w', newline='') as archivo:\n    escritor = csv.writer(archivo)\n    escritor.writerow(['Nombre', 'Edad'])\n    escritor.writerow(['Alice', 25])",
+                    "instructions": "Ejecuta el código anterior para crear un fichero `nuevo_datos.csv` con encabezados y una fila de datos.",
+                    "example_code_command": "python3 escribir_csv.py"
+                }
+            ]
+        }
+    }
+}

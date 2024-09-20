@@ -1,0 +1,51 @@
+{
+    "Módulo 16 - Bases de Datos SQLite": {
+        "Descripción": {
+            "description": "En este módulo aprenderás a trabajar con bases de datos utilizando SQLite, un sistema de gestión de bases de datos ligero y fácil de usar. Te enseñaremos cómo crear, leer, actualizar y eliminar datos (CRUD) desde Python, utilizando la biblioteca sqlite3.",
+            "content": [
+                {
+                    "title": "Introducción a SQLite",
+                    "text": "SQLite es una base de datos basada en archivos que permite almacenar datos de manera estructurada. Es ideal para aplicaciones pequeñas y medianas, y su uso es muy común en proyectos de Python.",
+                    "example_code": "import sqlite3\n\n# Conectar a una base de datos (se crea si no existe)\nconexion = sqlite3.connect('mi_base_de_datos.db')",
+                    "instructions": "Instala SQLite en tu sistema y asegúrate de tener acceso a la biblioteca sqlite3 en Python.",
+                    "example_code_command": "python3 crear_db.py"
+                },
+                {
+                    "title": "Creación de Tablas",
+                    "text": "Una vez conectados a la base de datos, podemos crear tablas para almacenar nuestros datos. Cada tabla necesita un nombre y una estructura definida por sus columnas.",
+                    "example_code": "cursor = conexion.cursor()\ncursor.execute('''CREATE TABLE usuarios (id INTEGER PRIMARY KEY, nombre TEXT, edad INTEGER)''')\nconexion.commit()",
+                    "instructions": "Define las columnas necesarias para tu aplicación y asegúrate de que las tablas se creen correctamente.",
+                    "example_code_command": "python3 crear_tabla.py"
+                },
+                {
+                    "title": "Insertar Datos",
+                    "text": "Con las tablas creadas, podemos insertar datos en ellas. Esto se hace utilizando comandos SQL en Python.",
+                    "example_code": "cursor.execute('''INSERT INTO usuarios (nombre, edad) VALUES (?, ?)''', ('Juan', 30))\nconexion.commit()",
+                    "instructions": "Prueba insertar diferentes usuarios en la tabla para asegurarte de que el proceso funcione correctamente.",
+                    "example_code_command": "python3 insertar_datos.py"
+                },
+                {
+                    "title": "Leer Datos",
+                    "text": "Para leer los datos almacenados, utilizamos consultas SELECT. Estas nos permiten recuperar información específica de nuestras tablas.",
+                    "example_code": "cursor.execute('''SELECT * FROM usuarios''')\nusuarios = cursor.fetchall()\nfor usuario in usuarios:\n    print(usuario)",
+                    "instructions": "Ejecuta consultas para extraer información y mostrarla en la consola.",
+                    "example_code_command": "python3 leer_datos.py"
+                },
+                {
+                    "title": "Actualizar Datos",
+                    "text": "A veces, necesitaremos modificar datos existentes. Esto se hace mediante la instrucción UPDATE en SQL.",
+                    "example_code": "cursor.execute('''UPDATE usuarios SET edad = ? WHERE nombre = ?''', (31, 'Juan'))\nconexion.commit()",
+                    "instructions": "Intenta actualizar la información de un usuario y verifica que el cambio se refleje.",
+                    "example_code_command": "python3 actualizar_datos.py"
+                },
+                {
+                    "title": "Eliminar Datos",
+                    "text": "Finalmente, podemos eliminar datos utilizando la instrucción DELETE. Esto es útil para mantener nuestra base de datos limpia.",
+                    "example_code": "cursor.execute('''DELETE FROM usuarios WHERE nombre = ?''', ('Juan',))\nconexion.commit()",
+                    "instructions": "Prueba eliminar un registro y asegúrate de que ya no esté en la base de datos.",
+                    "example_code_command": "python3 eliminar_datos.py"
+                }
+            ]
+        }
+    }
+}

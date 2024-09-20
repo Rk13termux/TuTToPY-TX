@@ -1,0 +1,51 @@
+{
+    "Módulo 5 - Colecciones": {
+        "Descripción": {
+            "description": "En este módulo aprenderás sobre las colecciones de datos en Python, incluyendo listas, tuplas, conjuntos y diccionarios. Estas estructuras de datos te permiten almacenar y organizar múltiples elementos de forma eficiente. También aprenderás cómo manipular estas colecciones mediante métodos y funciones incorporadas, lo que te ayudará a escribir código más flexible y dinámico.",
+            "content": [
+                {
+                    "title": "Listas",
+                    "text": "Las listas son colecciones ordenadas de elementos que pueden ser modificadas. Son útiles cuando necesitas almacenar múltiples valores en una sola variable y luego acceder a ellos o modificarlos.",
+                    "example_code": "mi_lista = [1, 2, 3, 4, 5]\nmi_lista.append(6)\nprint(mi_lista)  # Resultado: [1, 2, 3, 4, 5, 6]",
+                    "instructions": "Crea un archivo llamado `listas.py`, copia el código y ejecútalo. Observa cómo se añaden elementos a la lista utilizando el método `append`.",
+                    "example_code_command": "python3 listas.py"
+                },
+                {
+                    "title": "Tuplas",
+                    "text": "Las tuplas son colecciones ordenadas, similares a las listas, pero son inmutables. Una vez que creas una tupla, no puedes modificar sus elementos. Son útiles cuando necesitas almacenar una colección de elementos que no deben cambiar.",
+                    "example_code": "mi_tupla = (1, 2, 3)\nprint(mi_tupla)\n# mi_tupla[0] = 4  # Esto causaría un error porque las tuplas no pueden ser modificadas",
+                    "instructions": "Crea un archivo llamado `tuplas.py` y copia el código. Ejecuta el archivo para ver cómo funciona una tupla en Python y por qué es inmutable.",
+                    "example_code_command": "python3 tuplas.py"
+                },
+                {
+                    "title": "Conjuntos (sets)",
+                    "text": "Los conjuntos son colecciones desordenadas y sin elementos duplicados. Son útiles cuando necesitas almacenar valores únicos y realizar operaciones matemáticas como la unión y la intersección.",
+                    "example_code": "mi_conjunto = {1, 2, 3, 4, 4}\nprint(mi_conjunto)  # Resultado: {1, 2, 3, 4}\nmi_conjunto.add(5)\nprint(mi_conjunto)  # Resultado: {1, 2, 3, 4, 5}",
+                    "instructions": "Crea un archivo llamado `conjuntos.py`, copia el código y ejecútalo. Observa cómo los conjuntos eliminan los valores duplicados automáticamente.",
+                    "example_code_command": "python3 conjuntos.py"
+                },
+                {
+                    "title": "Diccionarios",
+                    "text": "Los diccionarios son colecciones desordenadas que almacenan pares de clave-valor. Son útiles cuando necesitas mapear claves únicas a valores específicos. Los diccionarios permiten un acceso rápido a los valores mediante sus claves.",
+                    "example_code": "mi_diccionario = {'nombre': 'Juan', 'edad': 25}\nprint(mi_diccionario['nombre'])  # Resultado: Juan\nmi_diccionario['edad'] = 26\nprint(mi_diccionario)  # Resultado: {'nombre': 'Juan', 'edad': 26}",
+                    "instructions": "Crea un archivo llamado `diccionarios.py`, copia el código y ejecútalo. Observa cómo acceder y modificar valores en un diccionario.",
+                    "example_code_command": "python3 diccionarios.py"
+                },
+                {
+                    "title": "Métodos comunes para colecciones",
+                    "text": "Python proporciona una variedad de métodos para trabajar con listas, tuplas, conjuntos y diccionarios. Entre los métodos más comunes están `len()`, `sorted()`, y `sum()`.",
+                    "example_code": "mi_lista = [5, 2, 9, 1]\nprint(len(mi_lista))  # Resultado: 4\nprint(sorted(mi_lista))  # Resultado: [1, 2, 5, 9]\nprint(sum(mi_lista))  # Resultado: 17",
+                    "instructions": "Guarda este código en un archivo llamado `metodos_colecciones.py`. Ejecuta el archivo y observa cómo los métodos integrados simplifican la manipulación de colecciones.",
+                    "example_code_command": "python3 metodos_colecciones.py"
+                },
+                {
+                    "title": "Iterando sobre colecciones",
+                    "text": "Puedes iterar fácilmente sobre los elementos de una lista, tupla, conjunto o diccionario utilizando un bucle `for`. En los diccionarios, puedes iterar sobre las claves, los valores o ambos.",
+                    "example_code": "mi_lista = [1, 2, 3]\nfor elemento in mi_lista:\n    print(elemento)\n\nmi_diccionario = {'nombre': 'Ana', 'edad': 30}\nfor clave, valor in mi_diccionario.items():\n    print(f'{clave}: {valor}')",
+                    "instructions": "Guarda este código en un archivo llamado `iterar_colecciones.py`. Ejecuta el archivo para ver cómo puedes iterar sobre listas y diccionarios de manera eficiente.",
+                    "example_code_command": "python3 iterar_colecciones.py"
+                }
+            ]
+        }
+    }
+}

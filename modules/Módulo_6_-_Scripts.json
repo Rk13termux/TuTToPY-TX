@@ -1,0 +1,58 @@
+{
+    "Módulo 6 - Scripts": {
+        "Descripción": {
+            "description": "En este módulo aprenderás qué son los scripts en Python y cómo puedes escribir, ejecutar y organizar tus scripts para que sean reutilizables y eficientes. También aprenderás a gestionar los argumentos que puedes pasar desde la línea de comandos y cómo estructurar proyectos Python que incluyan varios scripts interconectados.",
+            "content": [
+                {
+                    "title": "Qué es un Script",
+                    "text": "Un script es un archivo de código que puede ser ejecutado directamente. A diferencia de un programa grande o una aplicación, un script es generalmente más corto y está diseñado para automatizar tareas específicas o realizar una operación concreta.",
+                    "example_code": "print('¡Este es un script de Python!')",
+                    "instructions": "Crea un archivo llamado `mi_script.py`, copia el código anterior y ejecútalo desde la terminal para ver cómo funciona un script básico en Python.",
+                    "example_code_command": "python3 mi_script.py"
+                },
+                {
+                    "title": "Escribiendo un Script Reutilizable",
+                    "text": "Un script reutilizable es un script que se puede ejecutar varias veces sin cambios o que puede aceptar parámetros para realizar tareas ligeramente diferentes. Los scripts reutilizables son fundamentales en proyectos de mayor escala.",
+                    "example_code": "def saludar(nombre):\n    print(f'¡Hola, {nombre}!')\n\nsaludar('Carlos')",
+                    "instructions": "Guarda este código en un archivo llamado `saludo.py`. Ejecuta el archivo para ver cómo el script puede reutilizar la función `saludar` cada vez que se llame.",
+                    "example_code_command": "python3 saludo.py"
+                },
+                {
+                    "title": "Ejecutando un Script desde la Línea de Comandos",
+                    "text": "Puedes ejecutar un script de Python directamente desde la línea de comandos. Esto es especialmente útil cuando quieres automatizar tareas sin necesidad de abrir un entorno de desarrollo o un editor de código.",
+                    "example_code": "# Abre una terminal y escribe:\npython3 mi_script.py",
+                    "instructions": "Crea un archivo llamado `mi_script_terminal.py`, copia cualquier código que desees ejecutar, luego abre una terminal y escribe el comando `python3 mi_script_terminal.py` para ejecutar el script.",
+                    "example_code_command": "python3 mi_script_terminal.py"
+                },
+                {
+                    "title": "Argumentos desde la Línea de Comandos",
+                    "text": "Los scripts de Python pueden aceptar argumentos que pasas desde la línea de comandos, lo que te permite hacer que tu script sea más flexible y útil. Utilizamos el módulo `sys` para leer estos argumentos.",
+                    "example_code": "import sys\n\n# Imprime el primer argumento pasado desde la terminal\nprint('Argumento recibido:', sys.argv[1])",
+                    "instructions": "Crea un archivo llamado `argumentos.py`, copia el código, y luego ejecuta el script pasando un argumento desde la terminal con el comando `python3 argumentos.py hola`. Observa cómo el argumento se muestra en la salida.",
+                    "example_code_command": "python3 argumentos.py hola"
+                },
+                {
+                    "title": "Scripts con Parámetros Opcionales",
+                    "text": "A veces, un script puede requerir parámetros opcionales que no siempre necesitas pasar. En esos casos, puedes proporcionar valores predeterminados para los parámetros que no se reciban.",
+                    "example_code": "import sys\n\nnombre = sys.argv[1] if len(sys.argv) > 1 else 'Usuario'\nprint(f'¡Hola, {nombre}!')",
+                    "instructions": "Guarda el código en un archivo llamado `parametros.py`. Ejecuta el script con o sin argumentos desde la terminal y observa cómo el script maneja el parámetro opcional.",
+                    "example_code_command": "python3 parametros.py"
+                },
+                {
+                    "title": "Organizando Scripts en Proyectos",
+                    "text": "A medida que tus scripts se vuelven más complejos, es una buena idea organizarlos en proyectos con varias carpetas y archivos. Un buen enfoque es tener un archivo principal que se encargue de importar y ejecutar varios scripts según sea necesario.",
+                    "example_code": "from utils import saludar\n\nsaludar('Mundo')\n\n# Donde utils.py es un script en la misma carpeta que define la función saludar",
+                    "instructions": "Crea dos archivos: `utils.py` y `proyecto.py`. En `utils.py`, define una función llamada `saludar(nombre)` y, en `proyecto.py`, importa la función desde `utils` y llámala con el nombre 'Mundo'. Ejecuta el archivo `proyecto.py`.",
+                    "example_code_command": "python3 proyecto.py"
+                },
+                {
+                    "title": "Mejorando la Estructura de los Scripts",
+                    "text": "Para proyectos más grandes, considera estructurar tus scripts en paquetes, con una carpeta principal que contenga varios módulos o scripts relacionados. Utiliza `__init__.py` para que Python reconozca la carpeta como un paquete y puedas importar módulos desde ahí.",
+                    "example_code": "# Estructura del proyecto\n# 📁 proyecto/\n# ├── 📁 modulos/\n# │   ├── __init__.py\n# │   ├── modulo1.py\n# │   └── modulo2.py\n# └── principal.py",
+                    "instructions": "Crea una estructura de carpetas similar a la anterior y organiza los scripts en módulos. Luego, ejecuta el archivo `principal.py` para que importe los módulos desde la carpeta `modulos`.",
+                    "example_code_command": "python3 principal.py"
+                }
+            ]
+        }
+    }
+}

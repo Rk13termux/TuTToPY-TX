@@ -1,0 +1,58 @@
+{
+    "Módulo 9 - Programación Orientada a Objetos (POO)": {
+        "Descripción": {
+            "description": "En este módulo aprenderás los conceptos fundamentales de la Programación Orientada a Objetos (POO) en Python. La POO es un paradigma de programación que utiliza 'objetos' para representar datos y comportamientos, lo que facilita la organización y reutilización del código. Veremos clases, objetos, herencia y encapsulación.",
+            "content": [
+                {
+                    "title": "Introducción a la Programación Orientada a Objetos",
+                    "text": "La Programación Orientada a Objetos permite modelar el mundo real mediante la creación de clases y objetos. Una clase es una plantilla para crear objetos, y un objeto es una instancia de una clase. Esta forma de programación ayuda a organizar el código de manera más eficiente.",
+                    "example_code": "class Perro:\n    def ladrar(self):\n        print('¡Guau!')\n\nmi_perro = Perro()\nmi_perro.ladrar()",
+                    "instructions": "Crea un archivo llamado `introduccion_poo.py`, copia el código y ejecútalo para ver cómo se crean y utilizan objetos en Python.",
+                    "example_code_command": "python3 introduccion_poo.py"
+                },
+                {
+                    "title": "Clases y Objetos",
+                    "text": "Las clases pueden contener atributos (variables) y métodos (funciones) que definen el comportamiento de los objetos. Al crear un objeto, se pueden acceder a sus atributos y métodos usando la notación de punto.",
+                    "example_code": "class Coche:\n    def __init__(self, marca, modelo):\n        self.marca = marca\n        self.modelo = modelo\n\nmi_coche = Coche('Toyota', 'Corolla')\nprint(f'Marca: {mi_coche.marca}, Modelo: {mi_coche.modelo}')",
+                    "instructions": "Guarda este código en un archivo llamado `clases_y_objetos.py` y ejecútalo para observar cómo funcionan las clases y los objetos.",
+                    "example_code_command": "python3 clases_y_objetos.py"
+                },
+                {
+                    "title": "Métodos y Atributos",
+                    "text": "Los atributos se pueden definir dentro de un método especial llamado `__init__`, que es el constructor de la clase. Además, puedes definir métodos para que los objetos realicen acciones.",
+                    "example_code": "class Circulo:\n    def __init__(self, radio):\n        self.radio = radio\n    def area(self):\n        return 3.14 * (self.radio ** 2)\n\nmi_circulo = Circulo(5)\nprint(f'Área del círculo: {mi_circulo.area()}')",
+                    "instructions": "Crea un archivo llamado `metodos_y_atributos.py`, copia el código y ejecútalo para calcular el área de un círculo.",
+                    "example_code_command": "python3 metodos_y_atributos.py"
+                },
+                {
+                    "title": "Herencia",
+                    "text": "La herencia permite crear nuevas clases basadas en clases existentes. Esto permite reutilizar código y extender la funcionalidad de las clases base.",
+                    "example_code": "class Animal:\n    def hablar(self):\n        print('El animal hace un sonido')\n\nclass Gato(Animal):\n    def hablar(self):\n        print('¡Miau!')\n\nmi_gato = Gato()\nmi_gato.hablar()",
+                    "instructions": "Guarda este código en un archivo llamado `herencia.py` y ejecútalo para ver cómo se utiliza la herencia en Python.",
+                    "example_code_command": "python3 herencia.py"
+                },
+                {
+                    "title": "Polimorfismo",
+                    "text": "El polimorfismo permite que diferentes clases implementen métodos con el mismo nombre, pero con comportamientos diferentes. Esto facilita el uso de métodos de forma genérica.",
+                    "example_code": "class Perro(Animal):\n    def hablar(self):\n        print('¡Guau!')\n\nclass Pajaro(Animal):\n    def hablar(self):\n        print('¡Pío!')\n\ndef hacer_hablar(animal):\n    animal.hablar()\n\nmi_perro = Perro()\nmi_pajaro = Pajaro()\nhacer_hablar(mi_perro)\nhacer_hablar(mi_pajaro)",
+                    "instructions": "Crea un archivo llamado `polimorfismo.py`, copia el código y ejecútalo para observar el concepto de polimorfismo en acción.",
+                    "example_code_command": "python3 polimorfismo.py"
+                },
+                {
+                    "title": "Encapsulación",
+                    "text": "La encapsulación es el proceso de restringir el acceso a ciertos detalles internos de una clase. Esto se logra mediante modificadores de acceso como privado y protegido, para proteger los datos de un objeto.",
+                    "example_code": "class CuentaBancaria:\n    def __init__(self, saldo):\n        self.__saldo = saldo  # Atributo privado\n    def obtener_saldo(self):\n        return self.__saldo\n\ncuenta = CuentaBancaria(1000)\nprint(f'Saldo: {cuenta.obtener_saldo()}')",
+                    "instructions": "Guarda este código en un archivo llamado `encapsulacion.py` y ejecútalo para ver cómo funciona la encapsulación.",
+                    "example_code_command": "python3 encapsulacion.py"
+                },
+                {
+                    "title": "Clases Abstractas",
+                    "text": "Las clases abstractas permiten definir métodos que deben ser implementados en las clases derivadas. Utilizando el módulo `abc`, se puede crear una clase base que no se puede instanciar directamente.",
+                    "example_code": "from abc import ABC, abstractmethod\n\nclass Forma(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\nclass Rectangulo(Forma):\n    def __init__(self, ancho, alto):\n        self.ancho = ancho\n        self.alto = alto\n    def area(self):\n        return self.ancho * self.alto\n\nmi_rectangulo = Rectangulo(4, 5)\nprint(f'Área del rectángulo: {mi_rectangulo.area()}')",
+                    "instructions": "Crea un archivo llamado `clases_abstractas.py` y ejecuta el código para entender cómo funcionan las clases abstractas.",
+                    "example_code_command": "python3 clases_abstractas.py"
+                }
+            ]
+        }
+    }
+}

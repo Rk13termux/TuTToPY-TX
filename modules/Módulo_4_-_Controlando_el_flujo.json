@@ -1,0 +1,51 @@
+{
+    "Módulo 4 - Controlando el flujo": {
+        "Descripción": {
+            "description": "Este módulo cubre las estructuras de control de flujo en Python. Aprenderás a tomar decisiones con declaraciones condicionales, repetir bloques de código utilizando bucles y cómo romper o continuar la ejecución de estos bucles en diferentes situaciones. Controlar el flujo del programa te permitirá hacer que tu código sea más dinámico y responda a diferentes condiciones.",
+            "content": [
+                {
+                    "title": "Declaraciones condicionales: if, elif y else",
+                    "text": "Las declaraciones condicionales permiten que tu programa tome decisiones basadas en ciertas condiciones. Python utiliza `if`, `elif` y `else` para controlar este flujo. Si una condición es verdadera, ejecutará un bloque de código; de lo contrario, continuará con la siguiente condición o ejecutará el bloque `else` si todas las condiciones anteriores son falsas.",
+                    "example_code": "edad = 18\n\nif edad >= 18:\n    print('Eres mayor de edad')\nelif edad >= 13:\n    print('Eres un adolescente')\nelse:\n    print('Eres un niño')",
+                    "instructions": "Crea un archivo llamado `condicionales.py` y copia el código. Luego, ejecútalo para ver cómo las diferentes condiciones determinan la salida.",
+                    "example_code_command": "python3 condicionales.py"
+                },
+                {
+                    "title": "Bucles: while",
+                    "text": "Un bucle `while` ejecuta repetidamente un bloque de código mientras una condición sea verdadera. Es útil cuando no se conoce de antemano cuántas veces se debe repetir el ciclo.",
+                    "example_code": "contador = 0\n\nwhile contador < 5:\n    print('El contador es:', contador)\n    contador += 1",
+                    "instructions": "Crea un archivo llamado `bucle_while.py`, ejecuta el código y observa cómo el ciclo `while` repite las instrucciones hasta que la condición `contador < 5` deja de ser verdadera.",
+                    "example_code_command": "python3 bucle_while.py"
+                },
+                {
+                    "title": "Bucles: for",
+                    "text": "El bucle `for` se utiliza cuando quieres iterar sobre una secuencia (como una lista, una tupla, un string, etc.) o un rango de números. En cada iteración, el bucle toma un valor de la secuencia y lo asigna a una variable.",
+                    "example_code": "for i in range(5):\n    print('Número:', i)\n\nnombres = ['Ana', 'Luis', 'Juan']\nfor nombre in nombres:\n    print('Hola,', nombre)",
+                    "instructions": "Guarda este código en un archivo llamado `bucle_for.py`. Ejecuta el archivo para ver cómo el bucle `for` itera sobre un rango de números y una lista de nombres.",
+                    "example_code_command": "python3 bucle_for.py"
+                },
+                {
+                    "title": "Rompiendo bucles: break",
+                    "text": "El comando `break` te permite salir de un bucle antes de que la condición de finalización se cumpla. Esto es útil cuando quieres terminar el bucle en base a alguna otra condición interna.",
+                    "example_code": "for i in range(10):\n    if i == 5:\n        break  # Salir del bucle cuando i es igual a 5\n    print('Número:', i)",
+                    "instructions": "Crea un archivo llamado `bucle_break.py`, copia el código y ejecútalo para ver cómo el bucle `for` se interrumpe cuando el valor de `i` es 5.",
+                    "example_code_command": "python3 bucle_break.py"
+                },
+                {
+                    "title": "Saltando iteraciones: continue",
+                    "text": "El comando `continue` se utiliza para saltar la iteración actual y continuar con la siguiente. Esto puede ser útil cuando quieres evitar ejecutar algunas instrucciones para ciertos valores y seguir con el bucle normalmente.",
+                    "example_code": "for i in range(10):\n    if i % 2 == 0:  # Si el número es par\n        continue  # Saltar a la siguiente iteración\n    print('Número impar:', i)",
+                    "instructions": "Crea un archivo llamado `bucle_continue.py`, copia el código y ejecútalo para observar cómo el bucle salta los números pares y solo imprime los números impares.",
+                    "example_code_command": "python3 bucle_continue.py"
+                },
+                {
+                    "title": "Bucles anidados",
+                    "text": "Los bucles anidados son bucles dentro de otros bucles. Son útiles cuando necesitas realizar múltiples niveles de iteración, como al trabajar con matrices o listas de listas.",
+                    "example_code": "for i in range(3):\n    for j in range(2):\n        print(f'i: {i}, j: {j}')",
+                    "instructions": "Guarda este código en un archivo llamado `bucles_anidados.py`. Ejecuta el archivo para ver cómo funcionan los bucles anidados iterando sobre dos rangos de números.",
+                    "example_code_command": "python3 bucles_anidados.py"
+                }
+            ]
+        }
+    }
+}

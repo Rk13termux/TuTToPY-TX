@@ -1,0 +1,44 @@
+{
+    "Módulo 14 - Interfaces Gráficas": {
+        "Descripción": {
+            "description": "En este módulo aprenderás a crear interfaces gráficas de usuario (GUI) utilizando la biblioteca Tkinter de Python. Las interfaces gráficas permiten interactuar de manera más amigable y visual con los usuarios, mejorando la experiencia de uso de tus aplicaciones.",
+            "content": [
+                {
+                    "title": "Introducción a Tkinter",
+                    "text": "Tkinter es la biblioteca estándar para crear interfaces gráficas en Python. Proporciona herramientas para crear ventanas, botones, etiquetas y más.",
+                    "example_code": "import tkinter as tk\n\nventana = tk.Tk()\nventana.title('Mi Primera GUI')\nventana.mainloop()",
+                    "instructions": "Ejecuta el código para abrir una ventana vacía con el título 'Mi Primera GUI'.",
+                    "example_code_command": "python3 primera_gui.py"
+                },
+                {
+                    "title": "Añadir Etiquetas y Botones",
+                    "text": "Puedes añadir etiquetas y botones a tu ventana para interactuar con el usuario. Las etiquetas muestran texto y los botones pueden ejecutar funciones.",
+                    "example_code": "import tkinter as tk\ndef saludar():\n    print('¡Hola, mundo!')\n\nventana = tk.Tk()\netiqueta = tk.Label(ventana, text='Bienvenido a Tkinter')\netiqueta.pack()\n\nboton = tk.Button(ventana, text='Saludar', command=saludar)\nboton.pack()\n\nventana.mainloop()",
+                    "instructions": "Ejecuta el código para ver una etiqueta y un botón que imprime un saludo en la consola al hacer clic.",
+                    "example_code_command": "python3 etiqueta_boton.py"
+                },
+                {
+                    "title": "Entrada de Usuario",
+                    "text": "Puedes utilizar widgets de entrada para permitir que el usuario ingrese texto. Esto es útil para obtener información que utilizarás en tu aplicación.",
+                    "example_code": "import tkinter as tk\ndef mostrar_texto():\n    texto = entrada.get()\n    print(f'Texto ingresado: {texto}')\n\nventana = tk.Tk()\nentrada = tk.Entry(ventana)\nentrada.pack()\n\nboton = tk.Button(ventana, text='Mostrar Texto', command=mostrar_texto)\nboton.pack()\n\nventana.mainloop()",
+                    "instructions": "Ejecuta el código para abrir una ventana donde puedes ingresar texto y mostrarlo en la consola al presionar el botón.",
+                    "example_code_command": "python3 entrada_usuario.py"
+                },
+                {
+                    "title": "Uso de Frames",
+                    "text": "Los frames son contenedores que te permiten organizar mejor los elementos en tu GUI. Puedes agrupar widgets relacionados en un frame.",
+                    "example_code": "import tkinter as tk\nventana = tk.Tk()\nframe = tk.Frame(ventana)\nframe.pack()\netiqueta = tk.Label(frame, text='Dentro del Frame')\netiqueta.pack()\nventana.mainloop()",
+                    "instructions": "Ejecuta el código para ver cómo se organiza un widget dentro de un frame.",
+                    "example_code_command": "python3 uso_frames.py"
+                },
+                {
+                    "title": "Crear Menús",
+                    "text": "Puedes añadir menús a tu aplicación para facilitar la navegación y las opciones. Tkinter permite crear menús desplegables fácilmente.",
+                    "example_code": "import tkinter as tk\nventana = tk.Tk()\n\nmenu = tk.Menu(ventana)\nventana.config(menu=menu)\n\nsubmenu = tk.Menu(menu)\nmenu.add_cascade(label='Archivo', menu=submenu)\nsubmenu.add_command(label='Salir', command=ventana.quit)\n\nventana.mainloop()",
+                    "instructions": "Ejecuta el código para ver un menú desplegable en la parte superior de la ventana.",
+                    "example_code_command": "python3 crear_menu.py"
+                }
+            ]
+        }
+    }
+}

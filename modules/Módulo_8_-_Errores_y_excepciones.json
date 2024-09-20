@@ -1,0 +1,58 @@
+{
+    "Módulo 8 - Errores y Excepciones": {
+        "Descripción": {
+            "description": "En este módulo aprenderás sobre los errores y excepciones en Python, que son fundamentales para manejar situaciones inesperadas y garantizar que tu programa funcione de manera robusta. Veremos cómo identificar errores comunes, cómo usar bloques try-except para manejar excepciones y cómo crear tus propias excepciones personalizadas.",
+            "content": [
+                {
+                    "title": "Tipos Comunes de Errores",
+                    "text": "Los errores en Python se pueden clasificar en errores de sintaxis y errores en tiempo de ejecución. Los errores de sintaxis ocurren cuando el código no sigue las reglas del lenguaje, mientras que los errores en tiempo de ejecución son problemas que surgen mientras se ejecuta el programa, como divisiones por cero o acceso a índices fuera de rango.",
+                    "example_code": "print(1 / 0)  # Error de división por cero",
+                    "instructions": "Crea un archivo llamado `errores_comunes.py` y ejecuta el código para ver cómo se genera un error en tiempo de ejecución.",
+                    "example_code_command": "python3 errores_comunes.py"
+                },
+                {
+                    "title": "Manejo de Excepciones con Try-Except",
+                    "text": "El bloque try-except permite manejar excepciones de manera elegante. Puedes envolver el código que podría generar un error dentro del bloque try, y si ocurre una excepción, puedes manejarla en el bloque except, evitando que el programa se detenga inesperadamente.",
+                    "example_code": "try:\n    print(1 / 0)\nexcept ZeroDivisionError:\n    print('Error: No puedes dividir por cero.')",
+                    "instructions": "Guarda este código en un archivo llamado `manejo_excepciones.py` y ejecútalo para ver cómo se maneja el error de división por cero.",
+                    "example_code_command": "python3 manejo_excepciones.py"
+                },
+                {
+                    "title": "Capturando Múltiples Excepciones",
+                    "text": "Puedes manejar múltiples tipos de excepciones usando múltiples bloques except. Esto es útil cuando un bloque de código puede generar diferentes tipos de errores y quieres manejar cada uno de ellos de manera específica.",
+                    "example_code": "try:\n    x = int(input('Ingresa un número: '))\n    print(10 / x)\nexcept ValueError:\n    print('Error: Debes ingresar un número válido.')\nexcept ZeroDivisionError:\n    print('Error: No puedes dividir por cero.')",
+                    "instructions": "Crea un archivo llamado `multiples_excepciones.py`, copia el código y ejecútalo para ver cómo maneja diferentes tipos de excepciones.",
+                    "example_code_command": "python3 multiples_excepciones.py"
+                },
+                {
+                    "title": "Usando Finally para Código de Limpieza",
+                    "text": "El bloque finally se ejecuta siempre, haya o no habido una excepción en el bloque try. Esto es útil para asegurarte de que se realicen ciertas acciones de limpieza, como cerrar archivos o liberar recursos, sin importar el resultado de la operación anterior.",
+                    "example_code": "try:\n    file = open('archivo.txt', 'r')\n    # Código para leer el archivo\nexcept FileNotFoundError:\n    print('Error: El archivo no fue encontrado.')\nfinally:\n    print('Ejecutando bloque finally.')",
+                    "instructions": "Guarda este código en un archivo llamado `bloque_finally.py` y ejecútalo para ver cómo funciona el bloque finally.",
+                    "example_code_command": "python3 bloque_finally.py"
+                },
+                {
+                    "title": "Creando Excepciones Personalizadas",
+                    "text": "Puedes definir tus propias excepciones en Python creando una nueva clase que herede de la clase base `Exception`. Esto es útil cuando deseas lanzar errores específicos en ciertas condiciones en tu programa.",
+                    "example_code": "class MiError(Exception):\n    pass\n\ntry:\n    raise MiError('Esto es un error personalizado.')\nexcept MiError as e:\n    print(e)",
+                    "instructions": "Crea un archivo llamado `excepcion_personalizada.py` y ejecuta el código para ver cómo se lanza y maneja una excepción personalizada.",
+                    "example_code_command": "python3 excepcion_personalizada.py"
+                },
+                {
+                    "title": "Usando Assert para Verificaciones",
+                    "text": "La declaración assert se utiliza para realizar verificaciones en el código. Si la condición que se verifica es falsa, se lanza una excepción `AssertionError`. Esto es útil para realizar comprobaciones en el desarrollo y asegurarte de que el código se comporta como se espera.",
+                    "example_code": "x = -1\nassert x >= 0, 'El valor de x debe ser no negativo.'",
+                    "instructions": "Crea un archivo llamado `verificacion_assert.py` y ejecuta el código para ver cómo se lanza un AssertionError si la condición es falsa.",
+                    "example_code_command": "python3 verificacion_assert.py"
+                },
+                {
+                    "title": "Registro de Errores con Logging",
+                    "text": "El módulo `logging` permite registrar mensajes de error en diferentes niveles de gravedad. Esto es útil para realizar un seguimiento de los errores en la producción y ayuda en la depuración.",
+                    "example_code": "import logging\n\nlogging.basicConfig(level=logging.ERROR)\n\ntry:\n    1 / 0\nexcept ZeroDivisionError:\n    logging.error('Error de división por cero.')",
+                    "instructions": "Guarda este código en un archivo llamado `registro_errores.py` y ejecútalo para ver cómo se registran los errores en el log.",
+                    "example_code_command": "python3 registro_errores.py"
+                }
+            ]
+        }
+    }
+}

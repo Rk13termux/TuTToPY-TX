@@ -1,0 +1,44 @@
+{
+    "Módulo 1 - Presentación y bienvenida": {
+        "Descripción": {
+            "description": "En este primer módulo, se introduce al usuario al curso de Python, con una presentación general del lenguaje, su importancia y las razones por las cuales es fundamental aprenderlo. Se exploran brevemente sus aplicaciones en diversos campos, así como las expectativas del curso. Al finalizar, el estudiante comprenderá el potencial del lenguaje y estará motivado para continuar su aprendizaje.",
+            "content": [
+                {
+                    "title": "Introducción al lenguaje Python",
+                    "text": "Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, que se caracteriza por su sencillez y legibilidad. Creado por Guido van Rossum en 1991, Python se ha consolidado como uno de los lenguajes más populares debido a su facilidad de aprendizaje y su gran cantidad de aplicaciones en diversos campos como el desarrollo web, la automatización, la ciencia de datos, la inteligencia artificial y el desarrollo de software.",
+                    "example_code": "print('¡Bienvenido al curso de Python!')",
+                    "instructions": "Ejecuta este código en la terminal para verificar que Python esté correctamente instalado y que puedas ejecutar scripts simples.",
+                    "example_code_command": "python3 script.py"
+                },
+                {
+                    "title": "Por qué aprender Python",
+                    "text": "Python es un lenguaje versátil que se utiliza en múltiples industrias. Su sintaxis simple permite a los principiantes enfocarse en aprender conceptos de programación sin la complejidad de otros lenguajes. Además, Python cuenta con una amplia comunidad de desarrolladores y una extensa colección de bibliotecas, lo que permite crear aplicaciones con facilidad. Entre sus principales ventajas se encuentran su uso en ciencia de datos, inteligencia artificial y automatización, además de su integración con otras tecnologías.",
+                    "example_code": "import this\n# Esto imprimirá 'The Zen of Python', que contiene los principios del diseño de Python.",
+                    "instructions": "Ejecuta este comando para ver los principios detrás del diseño de Python y entender la filosofía que lo hace tan popular.",
+                    "example_code_command": "python3 -c 'import this'"
+                },
+                {
+                    "title": "Expectativas del curso",
+                    "text": "A lo largo de este curso, aprenderás desde los conceptos básicos de la programación hasta temas más avanzados, como la programación orientada a objetos, el manejo de archivos y la creación de interfaces gráficas. El curso está diseñado para que puedas progresar de manera gradual, comprendiendo cada concepto antes de pasar al siguiente. También tendrás acceso a recursos adicionales, como ejemplos prácticos y ejercicios interactivos que te ayudarán a reforzar lo aprendido.",
+                    "example_code": null,
+                    "instructions": "Asegúrate de tener instaladas todas las herramientas necesarias, como Python y un editor de texto. Es recomendable tener acceso a un entorno de desarrollo integrado (IDE) como Visual Studio Code o PyCharm.",
+                    "example_code_command": null
+                },
+                {
+                    "title": "Instalación de Python",
+                    "text": "Antes de empezar a escribir código en Python, necesitas asegurarte de tenerlo instalado en tu sistema. Python está disponible para diferentes sistemas operativos como Windows, macOS y Linux. Puedes descargar la versión más reciente desde la página oficial de Python.",
+                    "example_code": null,
+                    "instructions": "Visita https://www.python.org/downloads/ para descargar e instalar Python en tu sistema. Sigue las instrucciones de instalación específicas para tu sistema operativo.",
+                    "example_code_command": null
+                },
+                {
+                    "title": "Tu primer programa en Python",
+                    "text": "Una vez que Python esté instalado, puedes escribir tu primer programa. El programa clásico de 'Hola, mundo' es una buena forma de comenzar. En Python, escribir este programa es muy sencillo y te permitirá asegurarte de que todo está funcionando correctamente.",
+                    "example_code": "print('¡Hola, mundo!')",
+                    "instructions": "Escribe este código en tu editor de texto y guárdalo como `hola_mundo.py`. Luego, ejecútalo en la terminal para ver el resultado.",
+                    "example_code_command": "python3 hola_mundo.py"
+                }
+            ]
+        }
+    }
+}

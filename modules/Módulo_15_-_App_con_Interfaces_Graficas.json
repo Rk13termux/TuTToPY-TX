@@ -1,0 +1,44 @@
+{
+    "Módulo 15 - App con Interfaces Gráficas": {
+        "Descripción": {
+            "description": "En este módulo aprenderás a crear una aplicación completa con interfaces gráficas utilizando Tkinter. Se integrarán todos los conceptos aprendidos en módulos anteriores para desarrollar una app funcional que muestre información y permita la interacción del usuario.",
+            "content": [
+                {
+                    "title": "Estructura de la Aplicación",
+                    "text": "Antes de comenzar a programar, es importante tener una idea clara de la estructura de la aplicación. Decidiremos qué componentes necesitará nuestra app, como botones, entradas, etiquetas, y un menú.",
+                    "example_code": "# Estructura inicial de la aplicación\nimport tkinter as tk\n\nventana = tk.Tk()\nventana.title('Mi App Completa')\n\n# Aquí irán los componentes de la app\n\nventana.mainloop()",
+                    "instructions": "Define la estructura de tu aplicación y asegúrate de que la ventana se abra correctamente.",
+                    "example_code_command": "python3 estructura_app.py"
+                },
+                {
+                    "title": "Integración de Funciones",
+                    "text": "Cada componente de la aplicación debe tener una función asociada. Definiremos funciones que manejen eventos como clics de botones o entradas de texto.",
+                    "example_code": "def saludar():\n    nombre = entrada_nombre.get()\n    etiqueta_saludo.config(text=f'¡Hola, {nombre}!')\n\nentrada_nombre = tk.Entry(ventana)\netiqueta_saludo = tk.Label(ventana)\n# Lógica para añadir componentes a la ventana",
+                    "instructions": "Crea funciones que respondan a las acciones del usuario y actualicen la interfaz.",
+                    "example_code_command": "python3 funciones_app.py"
+                },
+                {
+                    "title": "Diseño de la Interfaz",
+                    "text": "El diseño de la interfaz es clave para la usabilidad de la aplicación. Usaremos frames y diferentes widgets para organizar la información de manera clara.",
+                    "example_code": "frame_principal = tk.Frame(ventana)\nframe_principal.pack(padx=10, pady=10)\netiqueta = tk.Label(frame_principal, text='Bienvenido a Mi App')\netiqueta.pack()\n# Más componentes en el frame",
+                    "instructions": "Asegúrate de que la interfaz sea atractiva y fácil de usar.",
+                    "example_code_command": "python3 diseño_interfaz.py"
+                },
+                {
+                    "title": "Manejo de Errores",
+                    "text": "Es fundamental manejar errores en la aplicación. Esto incluye verificar entradas del usuario y manejar excepciones para evitar que la aplicación se cierre inesperadamente.",
+                    "example_code": "try:\n    numero = int(entrada_numero.get())\nexcept ValueError:\n    etiqueta_error.config(text='Por favor, ingresa un número válido.')",
+                    "instructions": "Implementa manejo de errores en tu aplicación para mejorar la experiencia del usuario.",
+                    "example_code_command": "python3 manejo_errores.py"
+                },
+                {
+                    "title": "Ejemplo Completo de una App",
+                    "text": "Finalmente, juntaremos todos los elementos para crear una aplicación funcional. Este ejemplo integrará entradas de usuario, botones y respuestas a eventos.",
+                    "example_code": "import tkinter as tk\n\ndef calcular():\n    # Lógica para calcular y mostrar resultado\n    pass\n\nventana = tk.Tk()\nboton_calcular = tk.Button(ventana, text='Calcular', command=calcular)\nboton_calcular.pack()\nventana.mainloop()",
+                    "instructions": "Ejecuta el código para ver la aplicación completa en acción. Asegúrate de que todas las funciones se ejecuten correctamente.",
+                    "example_code_command": "python3 app_completa.py"
+                }
+            ]
+        }
+    }
+}

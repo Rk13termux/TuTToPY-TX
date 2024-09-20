@@ -1,0 +1,44 @@
+{
+    "Módulo 12 - Módulos y paquetes": {
+        "Descripción": {
+            "description": "En este módulo aprenderás sobre la organización del código en Python mediante módulos y paquetes. Entenderás cómo dividir tu programa en componentes reutilizables, facilitando la mantenibilidad y la claridad del código.",
+            "content": [
+                {
+                    "title": "Introducción a los Módulos",
+                    "text": "Un módulo es simplemente un archivo que contiene definiciones y declaraciones de Python. Puedes importar un módulo en otro archivo para usar sus funciones y variables.",
+                    "example_code": "import math\nresultado = math.sqrt(16)\nprint(resultado)  # Salida: 4.0",
+                    "instructions": "Crea un archivo llamado `modulo_ejemplo.py`, copia el código y ejecútalo para ver cómo se importan los módulos.",
+                    "example_code_command": "python3 modulo_ejemplo.py"
+                },
+                {
+                    "title": "Creando Tu Propio Módulo",
+                    "text": "Puedes crear tu propio módulo escribiendo funciones en un archivo .py. Para usarlo, simplemente importa el archivo en tu script principal.",
+                    "example_code": "# archivo: mi_modulo.py\ndef suma(a, b):\n    return a + b\n\n# archivo: usar_modulo.py\nimport mi_modulo\nresultado = mi_modulo.suma(5, 3)\nprint(resultado)  # Salida: 8",
+                    "instructions": "Crea los archivos `mi_modulo.py` y `usar_modulo.py`, copia el código, y ejecútalos para probar tu propio módulo.",
+                    "example_code_command": "python3 usar_modulo.py"
+                },
+                {
+                    "title": "Paquetes en Python",
+                    "text": "Un paquete es un directorio que contiene varios módulos. Para que Python lo reconozca como un paquete, debe contener un archivo `__init__.py`.",
+                    "example_code": "# Estructura de directorios:\n# mi_paquete/\n# ├── __init__.py\n# └── modulo1.py\n\n# En modulo1.py\ndef funcion():\n    return 'Hola desde modulo1'\n\n# En el archivo principal:\nfrom mi_paquete.modulo1 import funcion\nprint(funcion())  # Salida: Hola desde modulo1",
+                    "instructions": "Crea un paquete llamado `mi_paquete` con los archivos correspondientes y prueba la importación de sus módulos.",
+                    "example_code_command": "python3 archivo_principal.py"
+                },
+                {
+                    "title": "Módulos Estándar de Python",
+                    "text": "Python viene con una gran cantidad de módulos estándar que puedes usar. Algunos de los más comunes son `os`, `sys`, `datetime`, y `json`.",
+                    "example_code": "import json\npersona = {'nombre': 'Alice', 'edad': 25}\npersona_json = json.dumps(persona)\nprint(persona_json)  # Salida: {'nombre': 'Alice', 'edad': 25}",
+                    "instructions": "Crea un archivo llamado `modulos_estandar.py`, copia el código y ejecútalo para ver el uso de un módulo estándar.",
+                    "example_code_command": "python3 modulos_estandar.py"
+                },
+                {
+                    "title": "Uso de `pip` para Instalar Paquetes Externos",
+                    "text": "Puedes instalar paquetes externos utilizando `pip`. Estos paquetes pueden ampliar las funcionalidades de tus programas de Python.",
+                    "example_code": "# Ejecuta en la terminal:\npip install requests\n\n# Luego en tu código:\nimport requests\nrespuesta = requests.get('https://api.github.com')\nprint(respuesta.status_code)  # Salida: 200",
+                    "instructions": "Abre la terminal y ejecuta el comando anterior para instalar el paquete `requests`, luego prueba el código en un archivo llamado `uso_pip.py`.",
+                    "example_code_command": "python3 uso_pip.py"
+                }
+            ]
+        }
+    }
+}

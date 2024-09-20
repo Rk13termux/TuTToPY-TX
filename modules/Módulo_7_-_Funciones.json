@@ -1,0 +1,58 @@
+{
+    "Módulo 7 - Funciones": {
+        "Descripción": {
+            "description": "En este módulo aprenderás todo lo que necesitas saber sobre funciones en Python. Las funciones te permiten organizar tu código, hacerlo reutilizable y más fácil de mantener. Aprenderás a definir funciones, pasarles argumentos y devolver valores. Además, veremos cómo usar funciones anónimas (lambda), argumentos por defecto, y la importancia del alcance de las variables.",
+            "content": [
+                {
+                    "title": "Qué es una Función",
+                    "text": "Una función es un bloque de código que se ejecuta solo cuando es llamado. Puedes pasarle datos conocidos como parámetros, y la función puede devolver datos como resultado. Las funciones son útiles para evitar repetir código y mejorar la organización del programa.",
+                    "example_code": "def saludar():\n    print('¡Hola, bienvenido al curso!')\n\nsaludar()",
+                    "instructions": "Crea un archivo llamado `funcion_basica.py`, escribe este código en él y ejecútalo para ver cómo funciona una función simple.",
+                    "example_code_command": "python3 funcion_basica.py"
+                },
+                {
+                    "title": "Funciones con Parámetros",
+                    "text": "Una función puede aceptar uno o más parámetros, lo que la hace más flexible y reutilizable. Los parámetros son variables que se definen al momento de crear la función y permiten pasar información para que sea procesada dentro de la función.",
+                    "example_code": "def saludar(nombre):\n    print(f'¡Hola, {nombre}!')\n\nsaludar('Carlos')",
+                    "instructions": "Guarda este código en un archivo llamado `funcion_parametros.py` y ejecútalo. Cambia el valor del parámetro `nombre` para ver cómo afecta la salida de la función.",
+                    "example_code_command": "python3 funcion_parametros.py"
+                },
+                {
+                    "title": "Devolviendo Valores desde una Función",
+                    "text": "Las funciones pueden devolver valores utilizando la palabra clave `return`. Esto es útil cuando necesitas que una función realice un cálculo o procese datos y luego devuelva un resultado que se pueda usar más adelante en tu programa.",
+                    "example_code": "def sumar(a, b):\n    return a + b\n\nresultado = sumar(5, 3)\nprint('La suma es:', resultado)",
+                    "instructions": "Crea un archivo llamado `funcion_return.py`, copia el código y ejecútalo. Cambia los valores de `a` y `b` para ver diferentes resultados de la suma.",
+                    "example_code_command": "python3 funcion_return.py"
+                },
+                {
+                    "title": "Argumentos por Defecto",
+                    "text": "En Python, puedes definir valores por defecto para los parámetros de una función. Si el argumento correspondiente no se proporciona al llamar a la función, se utilizará el valor predeterminado.",
+                    "example_code": "def saludar(nombre='Usuario'):\n    print(f'¡Hola, {nombre}!')\n\nsaludar()\nsaludar('Carlos')",
+                    "instructions": "Guarda este código en un archivo llamado `funcion_default.py` y ejecútalo. Observa cómo funciona la función con o sin el parámetro `nombre`.",
+                    "example_code_command": "python3 funcion_default.py"
+                },
+                {
+                    "title": "Funciones Lambda",
+                    "text": "Las funciones lambda son funciones anónimas que se definen en una sola línea. Son útiles cuando necesitas una función pequeña y simple que se use una o pocas veces. Su sintaxis es compacta y eficiente.",
+                    "example_code": "suma = lambda a, b: a + b\nprint(suma(5, 3))",
+                    "instructions": "Crea un archivo llamado `funcion_lambda.py` y ejecuta el código para ver cómo funciona una función lambda que suma dos números.",
+                    "example_code_command": "python3 funcion_lambda.py"
+                },
+                {
+                    "title": "Alcance de las Variables en Funciones",
+                    "text": "El alcance de una variable define dónde está disponible en tu programa. Las variables definidas dentro de una función solo son accesibles dentro de esa función. Sin embargo, puedes utilizar variables globales dentro de una función si es necesario, aunque esto no es una práctica recomendada.",
+                    "example_code": "def funcion_local():\n    x = 10\n    print('Valor local de x:', x)\n\nx = 5\nfuncion_local()\nprint('Valor global de x:', x)",
+                    "instructions": "Crea un archivo llamado `funcion_alcance.py`, copia el código y ejecútalo para entender la diferencia entre variables locales y globales.",
+                    "example_code_command": "python3 funcion_alcance.py"
+                },
+                {
+                    "title": "Documentación de Funciones",
+                    "text": "Es una buena práctica documentar tus funciones utilizando docstrings. Un docstring es una cadena de texto que aparece justo debajo de la definición de una función y describe su propósito, los parámetros que recibe y el valor que devuelve.",
+                    "example_code": "def saludar(nombre):\n    '''Esta función imprime un saludo personalizado.\n\n    Args:\n        nombre (str): El nombre de la persona a saludar.\n    '''\n    print(f'¡Hola, {nombre}!')\n\nsaludar('Carlos')",
+                    "instructions": "Crea un archivo llamado `funcion_docstring.py`, ejecuta el código y usa la función `help(saludar)` en la terminal de Python para ver el docstring de la función.",
+                    "example_code_command": "python3 funcion_docstring.py"
+                }
+            ]
+        }
+    }
+}

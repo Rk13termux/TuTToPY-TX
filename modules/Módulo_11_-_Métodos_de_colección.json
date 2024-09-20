@@ -1,0 +1,44 @@
+{
+    "Módulo 11 - Métodos de colección": {
+        "Descripción": {
+            "description": "En este módulo exploraremos los métodos de colección en Python, que son herramientas poderosas para manejar datos en estructuras como listas, conjuntos, tuplas y diccionarios. Aprenderás a manipular, acceder y modificar datos de manera eficiente.",
+            "content": [
+                {
+                    "title": "Métodos de Listas",
+                    "text": "Las listas son colecciones ordenadas y mutables. Python proporciona varios métodos para manipular listas, como `append()`, `extend()`, `insert()`, `remove()`, y más.",
+                    "example_code": "mi_lista = [1, 2, 3]\nmi_lista.append(4)\nmi_lista.remove(2)\nprint(mi_lista)  # Salida: [1, 3, 4]",
+                    "instructions": "Crea un archivo llamado `metodos_listas.py`, copia el código y ejecútalo para ver cómo funcionan los métodos de listas.",
+                    "example_code_command": "python3 metodos_listas.py"
+                },
+                {
+                    "title": "Métodos de Conjuntos",
+                    "text": "Los conjuntos son colecciones no ordenadas y no permiten duplicados. Puedes usar métodos como `add()`, `remove()`, `union()`, `intersection()`, etc., para manipular conjuntos.",
+                    "example_code": "mi_conjunto = {1, 2, 3}\nmi_conjunto.add(4)\nmi_conjunto.remove(2)\nprint(mi_conjunto)  # Salida: {1, 3, 4}",
+                    "instructions": "Guarda este código en un archivo llamado `metodos_conjuntos.py` y ejecútalo para explorar los métodos de conjuntos.",
+                    "example_code_command": "python3 metodos_conjuntos.py"
+                },
+                {
+                    "title": "Métodos de Tuplas",
+                    "text": "Las tuplas son similares a las listas, pero son inmutables. Aunque no puedes modificar una tupla después de crearla, hay métodos como `count()` y `index()` que pueden ser útiles.",
+                    "example_code": "mi_tupla = (1, 2, 2, 3)\nprint(mi_tupla.count(2))  # Salida: 2\nprint(mi_tupla.index(3))  # Salida: 3",
+                    "instructions": "Crea un archivo llamado `metodos_tuplas.py`, copia el código y ejecútalo para practicar con métodos de tuplas.",
+                    "example_code_command": "python3 metodos_tuplas.py"
+                },
+                {
+                    "title": "Métodos de Diccionarios",
+                    "text": "Los diccionarios son colecciones de pares clave-valor. Métodos como `keys()`, `values()`, `items()`, `get()`, y `update()` te permiten acceder y modificar datos fácilmente.",
+                    "example_code": "mi_diccionario = {'nombre': 'Alice', 'edad': 25}\nmi_diccionario['edad'] = 26\nprint(mi_diccionario)  # Salida: {'nombre': 'Alice', 'edad': 26}",
+                    "instructions": "Guarda este código en un archivo llamado `metodos_diccionarios.py` y ejecútalo para entender cómo funcionan los diccionarios.",
+                    "example_code_command": "python3 metodos_diccionarios.py"
+                },
+                {
+                    "title": "Ejemplo Combinado de Métodos de Colección",
+                    "text": "Veamos un ejemplo que combina listas, conjuntos, tuplas y diccionarios para resolver un problema práctico.",
+                    "example_code": "personas = [{'nombre': 'Alice', 'edad': 25}, {'nombre': 'Bob', 'edad': 30}]\nfor persona in personas:\n    print(f'Nombre: {persona['nombre']}, Edad: {persona['edad']}')",
+                    "instructions": "Crea un archivo llamado `ejemplo_metodos_coleccion.py`, copia el código y ejecútalo para observar cómo se integran los métodos de colección.",
+                    "example_code_command": "python3 ejemplo_metodos_coleccion.py"
+                }
+            ]
+        }
+    }
+}

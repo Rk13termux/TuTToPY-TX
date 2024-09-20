@@ -1,0 +1,51 @@
+{
+    "Módulo 17 - Funciones Avanzadas": {
+        "Descripción": {
+            "description": "En este módulo profundizaremos en las funciones avanzadas de Python, incluyendo el uso de funciones lambda, decoradores y generadores. Estas herramientas te permitirán escribir código más eficiente y pythonic.",
+            "content": [
+                {
+                    "title": "Funciones Lambda",
+                    "text": "Las funciones lambda son funciones anónimas que se pueden definir en una sola línea. Son útiles para crear pequeñas funciones sin necesidad de definirlas de manera formal.",
+                    "example_code": "suma = lambda x, y: x + y\nprint(suma(5, 3))  # Salida: 8",
+                    "instructions": "Practica creando funciones lambda para operaciones simples.",
+                    "example_code_command": "python3 funciones_lambda.py"
+                },
+                {
+                    "title": "Uso de map() y filter()",
+                    "text": "Las funciones map() y filter() permiten aplicar una función a una lista y filtrar elementos respectivamente. Son útiles para trabajar con colecciones de datos.",
+                    "example_code": "numeros = [1, 2, 3, 4, 5]\ncuadrados = list(map(lambda x: x ** 2, numeros))\nprint(cuadrados)  # Salida: [1, 4, 9, 16, 25]",
+                    "instructions": "Prueba map() y filter() con diferentes listas y funciones.",
+                    "example_code_command": "python3 uso_map_filter.py"
+                },
+                {
+                    "title": "Decoradores",
+                    "text": "Los decoradores son funciones que envuelven a otras funciones para modificar su comportamiento. Son útiles para añadir funcionalidades como logging o autenticación.",
+                    "example_code": "def mi_decorador(func):\n    def envoltura():\n        print('Algo se está haciendo...')\n        func()\n    return envoltura\n\n@mi_decorador\ndef saludo():\n    print('Hola, Mundo!')\nsaludo()  # Salida: Algo se está haciendo... Hola, Mundo!",
+                    "instructions": "Crea tus propios decoradores y pruébalos en diferentes funciones.",
+                    "example_code_command": "python3 decoradores.py"
+                },
+                {
+                    "title": "Generadores",
+                    "text": "Los generadores permiten crear iteradores de manera simple utilizando la palabra clave 'yield'. Son útiles para manejar grandes conjuntos de datos sin consumir mucha memoria.",
+                    "example_code": "def contador(n):\n    for i in range(n):\n        yield i\n\nfor numero in contador(5):\n    print(numero)  # Salida: 0 1 2 3 4",
+                    "instructions": "Experimenta con generadores para crear iteradores personalizados.",
+                    "example_code_command": "python3 generadores.py"
+                },
+                {
+                    "title": "Funciones de Orden Superior",
+                    "text": "Las funciones de orden superior son funciones que pueden recibir otras funciones como argumentos o devolver funciones. Este concepto es fundamental en programación funcional.",
+                    "example_code": "def operar(func, x, y):\n    return func(x, y)\n\nresultado = operar(suma, 10, 5)\nprint(resultado)  # Salida: 15",
+                    "instructions": "Crea varias funciones y utilízalas como argumentos para explorar el concepto.",
+                    "example_code_command": "python3 funciones_orden_superior.py"
+                },
+                {
+                    "title": "Manejo de Excepciones en Funciones",
+                    "text": "Es importante manejar excepciones dentro de las funciones para prevenir que errores inesperados interrumpan la ejecución del programa.",
+                    "example_code": "def dividir(a, b):\n    try:\n        return a / b\n    except ZeroDivisionError:\n        return 'Error: División por cero'\n\nprint(dividir(10, 0))  # Salida: Error: División por cero",
+                    "instructions": "Implementa manejo de excepciones en tus funciones para robustecer tu código.",
+                    "example_code_command": "python3 manejo_excepciones.py"
+                }
+            ]
+        }
+    }
+}
