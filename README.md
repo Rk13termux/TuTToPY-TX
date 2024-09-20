@@ -70,7 +70,7 @@ Para instalar el curso en tu dispositivo, sigue estos pasos:
 2. **Navega al directorio del curso**:
 
     ```bash
-    cd curso_python
+    cd TuTToPY-TX|
     ```
 
 3. **Instala las dependencias necesarias**:
