@@ -62,7 +62,7 @@ Para instalar el curso en tu dispositivo, sigue estos pasos:
 1. **Clona el repositorio desde GitHub**:
 
     ```bash
-    https://github.com/Rk13termux/Curso-de-Python-TERMUX-.git
+    git clone https://github.com/Rk13termux/Curso-de-Python-TERMUX-.git
     ```
 
    Asegúrate de reemplazar `tu_usuario` con tu nombre de usuario en GitHub.
@@ -70,7 +70,7 @@ Para instalar el curso en tu dispositivo, sigue estos pasos:
 2. **Navega al directorio del curso**:
 
     ```bash
-    cd TuTToPY-TX|
+    cd TuTToPY-TX
     ```
 
 3. **Instala las dependencias necesarias**:
@@ -84,7 +84,7 @@ Una vez que hayas instalado todo lo necesario, puedes ejecutar el programa desde
 1. **Inicia el script principal**:
 
     ```bash
-    python main.py
+    python3 main.py
     ```
 
 2. **Sigue las instrucciones en pantalla**: El programa te presentará un menú principal desde donde podrás acceder a los diferentes módulos del curso.
