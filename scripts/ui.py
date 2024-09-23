@@ -26,69 +26,6 @@ def main_menu():
         
         # Mensaje de acción con el mismo tamaño y márgenes
         action_panel = Panel(
-            "[bold cyan]Accede a nuestro curso en video y logra tus objetivos en solo 15 días. ¡Recuerda, el tiempo es dinero![/bold cyan]",
-            border_style="cyan", width=adjust_width(), box=box.ROUNDED
-        )
-        console.print(action_panel)
-
-        # Generar código aleatorio con el mismo tamaño de marco
-        code = generate_random_code()
-        console.print(Panel(
-            f"[bold white]Código generado: [bold green]{code}[/bold green][/bold white]\n"
-            "[bold yellow]Este código te da acceso al curso durante un mes. ¡Envíalo por WhatsApp y participa por recompensas![/bold yellow]",
-            border_style="cyan", width=adjust_width(), box=box.ROUNDED
-        ))
-
-        # Mostrar menú principal después del código
-        display_file_menu()
-
-    except Exception as e:
-        console.print(f"[red]Error: {e}[/red]")
-
-def generate_random_code(length=15):
-    """Genera un código aleatorio de 15 caracteres (números y letras mayúsculas)."""
-    characters = string.ascii_uppercase + string.digits
-    return ''.join(random.choice(characters) for _ in range(length))
-
-def show_banner():
-    """Mostrar el banner con márgenes consistentes."""
-    terminal_width = adjust_width()
-    banner = Panel(
-        "[bold cyan]CURSO DE PYTHON (HACKERS)[/bold cyan]\n"
-        "[bold blue]Termux[/bold blue] [bold red]Code[/bold red]",
-        border_style="cyan", width=terminal_width, title="Menú Principal", title_align="center", box=box.ROUNDED
-    )
-    console.print(banner)
-
-def display_file_menu():
-import os
-import json
-import subprocess
-import random
-import string
-from rich.console import Console
-from rich.panel import Panel
-from rich.table import Table
-from rich import box
-from .modules_loader import list_json_files, display_json_content
-from .animations import startup_animation, clear_screen
-
-console = Console()
-
-def adjust_width():
-    """Calcula el ancho dinámico de los paneles y tablas según el ancho de la terminal."""
-    return max(30, console.width - 4)  # Ajusta el margen y asegura un mínimo de 30 caracteres de ancho.
-
-def main_menu():
-    try:
-        if not hasattr(main_menu, "initialized"):
-            startup_animation()
-            main_menu.initialized = True
-        
-        show_banner()
-        
-        # Mensaje de acción con el mismo tamaño y márgenes
-        action_panel = Panel(
             "[bold white][blue]APRENDE[/blue][yellow] PYTHON[/yellow] Y COMIENZA A CREAR TUS PROPIOS SCRIPTS EN [green]15[/green] DIAS[/bold white]",
               border_style="magenta",
               width=adjust_width(), box=box.ROUNDED
