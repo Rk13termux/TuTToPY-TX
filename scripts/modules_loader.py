@@ -48,9 +48,9 @@ def display_json_content(json_content):
         # Llamado a la acción
         console.print(Panel(
         "[bold cyan]¡Desbloquea el curso completo en videos y aprende Python desde cero en solo 15 días![/bold cyan]\n"
-        "[bold yellow]Este curso está diseñado para llevarte de principiante a avanzado con un enfoque intensivo y práctico.[/bold yellow]\n"
-        "[bold green]Para obtener acceso completo y personalizado, contacta con nosotros a través de WhatsApp y únete a nuestra comunidad de aprendices serios.[/bold green]",
-        border_style="cyan"
+        "[bold white]Este curso está diseñado para llevartede principiante a avanzado con un enfoque intensivo y práctico.[/bold white]\n"
+        "[bold green]Copia el [white]CODE[/white] del menu principal, envialo por WhatsApp y PIDE tu link de [blue]ACCESO[/blue]\n [yellow]SELECIONA LA OPCION 1 PARA [green]IR[/green] A[/yellow] [green]WHATSAPP[/green]  [/bold green]",
+          border_style="cyan"
     ))
     except Exception as e:
         console.print(f"[red]Error al procesar el contenido del JSON: {e}[/red]")
