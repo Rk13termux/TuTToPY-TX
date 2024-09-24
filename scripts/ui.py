@@ -27,17 +27,17 @@ def main_menu():
         # Mensaje de acción con el mismo tamaño y márgenes
         action_panel = Panel(
             "[bold white][blue]APRENDE[/blue][yellow] PYTHON[/yellow] Y COMIENZA A CREAR TUS PROPIOS SCRIPTS EN [green]15[/green] DIAS[/bold white]",
-              border_style="magenta",
-              width=adjust_width(), box=box.ROUNDED
+            border_style="magenta",
+            width=adjust_width(), box=box.ROUNDED
         )
         console.print(action_panel)
 
         # Generar código aleatorio con el mismo tamaño de marco
         code = generate_random_code()
         console.print(Panel(
-            f"[bold white] Code [bold green] WahtsApp [/bold green] [bold blue]{code}[/bold blue][/bold white]\n"
+            f"[bold white] Code [bold green] WhatsApp [/bold green] [bold blue]{code}[/bold blue][/bold white]\n"
             "[bold cyan] Este [white]CODE[white] se utiliza para [green]ACTIVAR[/green] funciones [yellow]PREMIUM[/yellow] en la Comunidad haciendo que este curso sea Dinamico y [magenta]ORIGINAL[/magenta][/bold cyan] ",
-              border_style="cyan", width=adjust_width(), box=box.ROUNDED
+            border_style="cyan", width=adjust_width(), box=box.ROUNDED
         ))
 
         # Mostrar menú principal después del código
@@ -65,6 +65,9 @@ def display_file_menu():
     """Muestra el menú de archivos de los módulos con márgenes consistentes."""
     directory = './modules'
     files = list_json_files(directory)
+
+    # Ordenar los archivos numéricamente
+    files.sort(key=lambda f: int(''.join(filter(str.isdigit, f))))
 
     table = Table(show_header=True, header_style="bold red", style="cyan", box=box.ROUNDED)
     table.add_column("N°", style="red")
